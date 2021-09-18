@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This is my Website!</title>
+</head>
+<body>
+    <h1>Welcome to the website!</h1>
+    <img src="example.png">
+    <p>
+        Description!
+    </p>
+    <br>
+
+    <!comment>
+    <h2>Directions</h2>
+    <p>]
+
+    <!comment>
+    <h2>Directions</h2>
+    <p>
+        You'll find this desc at the bottom of this page.<em>Hi</em>
+    </p>
+</body>
+</html>
