@@ -8,13 +8,13 @@ body {
 h1 {
     background-color:rgba(204, 204, 204, 0.603);
     color:black;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Garamond;
     text-align:center;
 }
 h2 {
     background-color:rgba(204, 204, 204, 0.603);
     color:black;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:Garamond;
 }
 h4 {
     background-color:rgba(204, 204, 204, 0.603);
