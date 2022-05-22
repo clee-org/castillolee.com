@@ -20,8 +20,11 @@ h2 span {
     background-color:rgba(24, 209, 233, 0.699);
 }
 h4 {
-    background-color:rgba(204, 204, 204, 0.603);
     color:black;
+    font-family: Garamond;
+}
+h4 span {
+    background-color:rgba(204, 204, 204, 0.603);
 }
 p {
     color:black;
