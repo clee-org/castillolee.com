@@ -26,6 +26,11 @@ h4 {
 h4 span {
     background-color:rgba(204, 204, 204, 0.603);
 }
+h5 {
+    color:black;
+    font-family: Garamond;
+    text-align:end;
+}
 p {
     color:black;
 }
