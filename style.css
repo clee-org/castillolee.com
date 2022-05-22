@@ -12,10 +12,11 @@ h1 {
     text-align:center;
 }
 h2 {
-    background-color:rgba(204, 204, 204, 0.603);
-    width: 50%;
     color:black;
     font-family:Garamond;
+}
+h2 span {
+    background-color:rgba(204, 204, 204, 0.603);
 }
 h4 {
     background-color:rgba(204, 204, 204, 0.603);
