@@ -33,6 +33,7 @@ h5 {
 }
 p {
     color:black;
+    display: inline;
 }
 #highlight {
     color: lightcoral;
@@ -51,10 +52,13 @@ img {
     top: 0;
     left: -100vw;
     overflow-y: auto;
+    overflow-x: auto;
     z-index: 0;
     background-color: white;
+    display: inline;    
 }
 .page:target {
     left:0vw;
     z-index: 1;
+    display: inline;
 }
