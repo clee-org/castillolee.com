@@ -44,3 +44,17 @@ img {
     width:110%;
     transform:rotate(180deg);
 }
+.page {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    overflow-y: auto;
+    z-index: 0;
+    background-color: white;
+}
+.page:target {
+    left:0vw;
+    z-index: 1;
+}
