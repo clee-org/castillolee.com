@@ -33,7 +33,6 @@ h5 {
 }
 p {
     color:black;
-    display: inline;
 }
 #highlight {
     color: lightcoral;
@@ -41,24 +40,38 @@ p {
 }
 img {
     border:5px solid rgba(128, 128, 128, 0.603);
-    height:110%;
-    width:110%;
-    transform:rotate(180deg);
+    height:100%;
+    width:100%;
 }
 .page {
     width: 100vw;
     height: 100vh;
-    position: fixed;
+    position: auto;
     top: 0;
     left: -100vw;
     overflow-y: auto;
     overflow-x: auto;
     z-index: 0;
-    background-color: white;
-    display: inline;    
+    background-color: white;  
 }
 .page:target {
     left:0vw;
     z-index: 1;
-    display: inline;
+}
+a:link, a:visited {
+    color:white;
+    text-decoration:none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:darkslategrey;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+a:hover {
+    color:burlywood;
+    text-decoration:none;
+}
+a:active {
+    color:silver;
+    text-decoration:none;
 }
