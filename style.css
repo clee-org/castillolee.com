@@ -2,14 +2,18 @@
 Text and formatting
 */
 body {
-    background-image:image("background.jpg");
     background-color:white;
+    background-image: url("background.jpg");
 }
 h1 {
     background-color:rgba(204, 204, 204, 0.603);
     color:black;
-    font-family:Garamond;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align:center;
+    background-color: whitesmoke;
+    background-image: url("h1.jpg");
+    border-radius: 30px;
+    padding: 20px;
 }
 h2 {
     color:black;
@@ -38,11 +42,8 @@ p {
     color: lightcoral;
     background-color: lightyellow;
 }
-img {
-    border:5px solid rgba(128, 128, 128, 0.603);
-    height:100%;
-    width:100%;
-}
+
+/*Page formats */
 .page {
     width: 100vw;
     height: 100vh;
@@ -52,18 +53,20 @@ img {
     overflow-y: auto;
     overflow-x: auto;
     z-index: 0;
-    background-color: white;  
+    background-color: white;
 }
 .page:target {
     left:0vw;
     z-index: 1;
 }
+/*Button formatting */
 a:link, a:visited {
     color:white;
     text-decoration:none;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color:darkslategrey;
     padding: 14px 25px;
+    border-radius: 10px 20px 10px;
     text-align: center;
     display: inline-block;
 }
@@ -74,4 +77,46 @@ a:hover {
 a:active {
     color:silver;
     text-decoration:none;
+}
+.dropbtn {
+    background-color: darkslategray;
+    color: white;
+    padding: 16px;
+    border-radius: 10px 20px 10px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown {
+    position:relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position:  absolute;
+    background-color: darkslategray;
+    border:none;
+    border-radius: 20px;
+    opacity: 0.85;
+    min-width: min-content;
+    z-index: 1;
+}
+.dropdown-content a:hover {color:burlywood;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {color: burlywood;}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/*Images and formatting */
+
+img {
+    width:50%;
+    height:50%;
+    border: 5px;
+    border-color: aliceblue;
+    border-radius: 10px 20px 10px;
 }
