@@ -43,7 +43,9 @@ h4 span {
 h5 {
     color:black;
     font-family: Garamond;
-    text-align:end;
+    position: fixed;
+    text-align: right;
+    bottom: 0;
 }
 p {
     color:black;
