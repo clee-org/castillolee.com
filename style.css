@@ -24,6 +24,8 @@ h1 {
     background-image: url("h1.jpg");
     border-radius: 30px;
     padding: 20px;
+    border-color:dimgrey;
+    border: 4px;
 }
 h2 {
     color:black;
