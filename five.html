@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <head>
     <link rel="stylesheet"href="style.css">
     <script src="style.js"></script>
@@ -31,16 +31,15 @@
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
-<div class="dropdown">
-    <button class="dropbtn">
-    </button>
-    <div class="dropdown-content">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="recipes.html">Family Recipes</a>
-        <a href="autocad.html">CAD Portfolio</a>
-        <a href="projects.html">Projects</a>
-        <a href="five.html">Page Five</a>
+    <div class="dropdown">
+        <button onClick="drop()" class="dropbtn"></button>
+        <div class="dropdown-content">
+            <a href="index.html">Home</a>
+                <a href="jose.html">About Jose</a>
+                <a href="shannen.html">About Shannen</a>
+                <a href="recipes.html">Family Recipes</a>
+                <a href="autocad.html">CAD Portfolio</a>
+                <a href="projects.html">Projects</a>
     </div>
 </div>
 </div>
@@ -54,6 +53,21 @@
 <script>
 function myFunction(x) {
   x.classList.toggle("change");
+}
+function drop() {
+    document.getElementById(dropdown-content).classlist.toggle("show");
+}
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbt')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
 }
 </script>
 </body>
