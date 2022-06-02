@@ -3,7 +3,16 @@ Text and formatting
 */
 body {
     background-color:white;
-    background-image: url("background.jpg");
+    background-image:url("whites.jpg");
+}
+p.ex1 {
+    font-size:200px;
+    color: black;
+    text-align:center;
+    padding: 20px;
+    border-radius: 10px;
+    border:#333
+
 }
 h1 {
     background-color:rgba(204, 204, 204, 0.603);
