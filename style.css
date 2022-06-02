@@ -4,6 +4,7 @@ Text and formatting
 body {
     background-color:white;
     background-image:url("whites.jpg");
+    background-size: 100%;
 }
 p.ex1 {
     font-size:200px;
