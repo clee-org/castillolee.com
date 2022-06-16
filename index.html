@@ -12,31 +12,36 @@
 
 <body>
     <!--Homepage-->
-    <div class="dropdown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="jose.html">About Jose</a>
-            <a href="shannen.html">About Shannen</a>
-            <a href="recipes.html">Family Recipes</a>
-            <a href="autocad.html">CAD Portfolio</a>
-            <a href="projects.html">Projects</a>
+    <div id="navbar">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="clickyMenu()">
+                <div class="container" onclick="buttonAnimation(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="index.html">Home</a>
+                    <a href="jose.html">About Jose</a>
+                    <a href="shannen.html">About Shannen</a>
+                    <a href="recipes.html">Family Recipes</a>
+                    <a href="autocad.html">CAD Portfolio</a>
+                    <a href="projects.html">Projects</a>
+                </div>
+                </div>
+            </button>
         </div>
-    </div>    
+        </div>
         <h1>
             A work in progress.
         </h1>
-        <p class="ex1">
-            Hey.
-        </p>
-        <h2>
-            Feel free to look around the website and see how my style evolves over time.
-        </h2>
-    <h5>
-        <hr>
-        castillolee.com designed by Jose and Shannen Castillo Lee
-    </h5>
+        <h3 class="gradient-text">
+            Hey there.
+        </h3>
+        <div class = "footer">
+            <p>
+                castillolee.com built by Jose and Shannen Castillo Lee.
+            </p>
+        </div>
 </body>
-
 
 
