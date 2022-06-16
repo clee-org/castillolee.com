@@ -2,9 +2,9 @@
 Text and formatting
 */
 body {
-    background-color:white;
-    background-image:url("whites.jpg");
-    background-size: 100%;
+    background-color: white;
+    background-image:linear-gradient(white, whitesmoke);
+    background-size:100%;
 }
 p.ex1 {
     font-size:200px;
@@ -22,7 +22,7 @@ h1 {
     text-align:center;
     background-color: whitesmoke;
     background-image: url("h1.jpg");
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 20px;
     border-color:dimgrey;
     border: 4px;
@@ -34,6 +34,16 @@ h2 {
 }
 h2 span {
     background-color:rgba(24, 209, 233, 0.699);
+    background-image: linear-gradient(28deg, white, whitesmoke);
+}
+h3
+{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    font-size: 6cm;
+    text-align: center;
+    margin-bottom: 0;
+    margin-bottom: -0.25cm;
 }
 h4 {
     color:black;
@@ -52,78 +62,165 @@ h5 {
 p {
     color:black;
 }
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: papayawhip;
+    color: black;
+    text-align:right;
+}
 #highlight {
     color: lightcoral;
     background-color: lightyellow;
 }
+.gradient-text {
+    background-image: linear-gradient(45deg,
+    plum 16.666%, 
+    pink 33.333%, 
+    cyan 33.333%, 
+    turquoise 50%, 
+    darkturquoise 50%, 
+    thistle 66.666%, 
+    pink 66.666%, 
+    plum 83.333%, 
+    purple 83.333%);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+.gradient-text:hover
+{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
 
 /*Page formats */
-.page {
-    width: 100vw;
-    height: 100vh;
-    position: auto;
-    top: 0;
-    left: -100vw;
-    overflow-y: auto;
-    overflow-x: auto;
-    z-index: 0;
-    background-color: white;
-}
-.page:target {
-    left:0vw;
-    z-index: 1;
-}
 /*Button formatting */
 a:link, a:visited {
     color:white;
     text-decoration:none;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color:darkslategrey;
+    background-color:darkturquoise;
     padding: 14px 25px;
     border-radius: 10px 20px 10px;
     text-align: center;
     display: inline-block;
 }
 a:hover {
-    color:burlywood;
+    color:red;
     text-decoration:none;
 }
 a:active {
-    color:silver;
+    color:red;
     text-decoration:none;
 }
-.dropbtn {
-    background-color: darkslategray;
-    color: white;
-    padding: 16px;
-    border-radius: 10px 20px 10px;
-    font-size: 16px;
+/*new section for menu
+*/
+#navbar {
+    overflow: hidden;
+    background-color:white;
     border: none;
 }
-.dropdown {
-    position:relative;
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 14px;
+    text-decoration: none;
+}
+#navbar a:hover {
+color: red;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
+}
+.container {
     display: inline-block;
+    cursor:pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:white;
+    margin: 6px 0;
+    transition: 0.3s;
+    border: none;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+}
+.dropbtn {
+background-color:darkturquoise;
+border: none;
+border-radius: 10px;
+font-family: inherit;
+margin: 0;
+}
+.dropdown {
+position:relative;
+display:inline-block;
 }
 .dropdown-content {
-    display: none;
-    position:  absolute;
-    background-color: darkslategray;
-    border:none;
-    border-radius: 20px;
-    opacity: 0.85;
-    min-width: min-content;
-    z-index: 1;
+display: none;
+position:relative;
+background-color:darkturquoise;
+border:none;
+border-radius: 20px;
+font-size: 20px;
+min-width: 160px;
+z-index: 1;
 }
-.dropdown-content a:hover {color:burlywood;}
+.show {display: block;}
 
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {color: burlywood;}
-
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-}
 
 /*Images and formatting */
 
