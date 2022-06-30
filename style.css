@@ -64,10 +64,13 @@ p {
 }
 .footer {
     position: fixed;
+    opacity: 0.7;
     right: 0;
+    border-radius: 10px;
+    padding: 6px;
     bottom: 0;
     width: 100%;
-    background-color: papayawhip;
+    background-color: rgb(228, 226, 214);
     color: black;
     text-align:right;
 }
