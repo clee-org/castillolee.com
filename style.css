@@ -1,14 +1,17 @@
 /*
 Text and formatting
 */
+.background {
+    background-image: linear-gradient(45deg,
+        gray 16.666%,
+        lightgray 50%,
+        whitesmoke 50%,
+        white 83.333%);
+}
 body {
-    background-color: white;
-    background-image:image("whites.jpg");
-    background-size:100%;
-    text-align:center;
-    text-justify:inter-word;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 30px;
 }
 p.ex1 {
     font-size:200px;
@@ -51,10 +54,11 @@ h3
 }
 h4 {
     color:black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 23px;
+    font-family: Garamond;
+    font-size: 30px;
     text-justify:inter-word;
-    text-align: justify;
+    text-align:left;
+    padding: 20px 100px 20px 100px;
 }
 h4 span {
     background-color:rgba(204, 204, 204, 0.603);
@@ -68,18 +72,21 @@ h5 {
 }
 p {
     color:black;
+    font-size: 20px;
+    padding: 0px 130px 0px 130px;
 }
 .footer {
     position: fixed;
     opacity: 0.7;
     right: 0;
     border-radius: 5px;
-    padding: 10px;
     bottom: 0;
     width: 100%;
     background-color: rgb(224, 219, 189);
     color: black;
     text-align:right;
+    font-size: 16px;
+    padding: 10px;
 }
 #highlight {
     color: lightcoral;
