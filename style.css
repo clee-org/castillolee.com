@@ -1,17 +1,15 @@
 /*
 Text and formatting
 */
-.background {
-    background-image: linear-gradient(45deg,
-        gray 16.666%,
-        lightgray 50%,
-        whitesmoke 50%,
-        white 83.333%);
-}
 body {
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 30px;
+    background-image: url("front.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    border:white;
+    border-radius: 30px;
 }
 p.ex1 {
     font-size:200px;
@@ -47,10 +45,11 @@ h3
 {
     font-family: "Archivo Black", sans-serif;
     font-weight: normal;
-    font-size: 6cm;
-    text-align: center;
+    font-size: 4cm;
+    text-align: left;
     margin-bottom: 0;
     margin-bottom: -0.25cm;
+    padding: 0px 100px 0px 100px;
 }
 h4 {
     color:black;
@@ -163,7 +162,6 @@ a:active {
 */
 #navbar {
     overflow: hidden;
-    background-color:white;
     border: none;
     text-align:left;
 }
@@ -243,11 +241,12 @@ z-index: 1;
 /*Images and formatting */
 
 img {
-    width:50%;
-    height:50%;
-    border: 5px;
+    width:80%;
+    height:80%;
+    border: 10px;
     border-color: aliceblue;
-    border-radius: 10px 20px 10px;
+    border-radius: 0px 40px 0px 40px;
+    padding: 0px 40px 0px 40px;
 }
 .row {
     display: flex;
