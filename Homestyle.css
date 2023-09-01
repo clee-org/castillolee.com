@@ -98,8 +98,9 @@ html {
 
 .nav {
     padding: 20px;
-    background-color: white;
+    background-color: rgba(236, 236, 236, 0.649);
     overflow: hidden;
+    border-radius: 10px;
 }
 .nav a {
   
